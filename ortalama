@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int quiz, vize, finnal;
+        double ortalama;
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("quiz notu:?");
+        quiz = input.nextInt();
+
+        System.out.println("vize notu:?");
+        vize = input.nextInt();
+
+        System.out.println("finnal notu:?");
+        finnal = input.nextInt();
+
+        ortalama = finnal*0.5 + vize*0.4 + quiz*0.1 ;
+        System.out.println("ORTALAMA:" + ortalama);
+        String sonuc = (ortalama>=40) ? "gectiniz" : "kaldiniz";
+        System.out.println(sonuc);
+    }
+}
