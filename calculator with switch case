@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Short sayi1, sayi2;
+        System.out.println("ilk sayiyi giriniz:");
+         sayi1 = scanner.nextShort();
+        System.out.println("ikinci sayiyi giriniz:");
+        sayi2 = scanner.nextShort();
+        System.out.println("yapacaginiz islemi secin:");
+        System.out.println("1-Toplama\n 2-cikarma\n 3-carpma\n 4-bölme");
+        short islem = scanner.nextShort();
+
+        switch (islem){
+            case 1:
+                System.out.println(sayi1+sayi2);
+                break;
+
+            case 2:
+                System.out.println(sayi1-sayi2);
+                break;
+            case 3:
+                System.out.println(sayi1*sayi2);
+                break;
+            case 4:
+                System.out.println(sayi1/sayi2);
+                break;
+        }
+        }
+    }
