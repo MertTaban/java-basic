@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String kullaniciadi, parola;
+        System.out.println("kullanici adinizi giriniz:");
+        kullaniciadi = scanner.nextLine();
+
+
+        System.out.println("parolanizi giriniz:");
+        parola = scanner.nextLine();
+
+        if (kullaniciadi.equals("merttaban") && parola.equals("1234")) {
+
+            System.out.println("basarili bir sekilde giris yaptiniz.");
+        } else {
+            System.out.println("hatali bir kullanici adi ya da parola girdiniz.");
+
+
+        }
+    }
+}
