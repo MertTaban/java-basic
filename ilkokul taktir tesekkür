@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int turkce, fen, hayatbilgisi, matematik;
+
+        System.out.println("turkce notunuzu giriniz.");
+        turkce = scanner.nextInt();
+
+        System.out.println("fen notunuzu giriniz.");
+        fen = scanner.nextInt();
+
+        System.out.println("hayatbilgisi notunuzu giriniz.");
+        hayatbilgisi = scanner.nextInt();
+
+        System.out.println("matematik notunuzu giriniz.");
+        matematik = scanner.nextInt();
+
+       double ortalama = (fen+matematik+hayatbilgisi+turkce)/4.0;
+        System.out.println("ortalamaniz:" + ortalama);
+
+        if (ortalama<50){
+            System.out.println("sinifta kaldiniz.");
+        } else if (ortalama<70) {
+            System.out.println("sinifi gectiniz.");
+
+        }
+        else if (ortalama<85){
+            System.out.println("tesekkür belgesi aldiniz.");
+
+        }
+        else{
+            System.out.println("taktir belgesi aldiniz.");
+        }
+
+    }
+}
+
